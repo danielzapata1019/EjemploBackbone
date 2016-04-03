@@ -2,9 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Ejemplo BackBone.js</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/template" id="details">
+        <ul class="list-group">
+            <% _.each(messages, function(item) { %>
+            <% var noPicture = 'http://www.gamedots.mx/media/gd/styles/wide_large/public/images/2015/07/uncha.jpg?itok=UGtFJd3n'%>
+            <li class="list-group-item">
+                <div class="row">
+                    <img class="picture" src="<%= item.picture !== ''? item.picture : noPicture  %>" />
+                    <img class="icon" src="<%= item.icon  %>" />
+                    <span class="col-md-9 col-lg-9 text"><%= item.message %></span>
+                </div>
+            </li>
+            <%});%>
+        </ul>
+    </script>
 </head>
 <body>
 
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <!-- search -->
+            <div class="row">
+                //campo texto
+            </div>
+
+            <!-- messages -->
+            <div class="row" id="mydiv">
+
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/underscore/underscore-min.js"></script>
+<script src="bower_components/backbone/backbone-min.js"></script>
+<script src="Scripts/main.js"></script>
 </html>

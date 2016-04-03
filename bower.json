@@ -1,0 +1,31 @@
+{
+  "name": "Parcial",
+  "authors": [
+    "danielzapata1019 <danielzapata-1019@hotmail.com>"
+  ],
+  "description": "Parcial enfasis 3 Daniel Zapata",
+  "main": "",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6",
+    "less": "^2.6.1",
+    "font-awesome": "fontawesome#^4.5.0",
+    "underscore": "^1.8.3",
+    "backbone": "^1.3.2"
+  }
+}
