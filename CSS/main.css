@@ -8,6 +8,7 @@ li {
 .text {
     margin-left: 29px;
     padding-left: 29px;
+    margin-top: 36px;
 }
 
 #message {
@@ -18,7 +19,8 @@ li {
     top: 0;
     border-radius: 157px;
     width: 80px;
-    height: 80px
+    height: 80px;
+    float:left;;
 }
 
 .icon {
@@ -29,4 +31,20 @@ li {
     width: 45px;
     heicht: 45px;
     border-radius: 45px;
+}
+
+.btnSearch{
+    height:33px;top:15px;
+    background-color:#08007A;
+    color:#fff
+}
+.btnSearch .hover{
+    color:#00f
+}
+.search{
+    top:15px;
+    height:33px;
+    width:500.2px;
+    border:none;
+    background-color:#DAD6D6
 }

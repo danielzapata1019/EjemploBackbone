@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>Ejemplo BackBone.js</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/main.css">
 
     <script type="text/template" id="details">
         <ul class="list-group">
-            <% _.each(messages, function(item) { %>
-            <% var noPicture = 'http://www.gamedots.mx/media/gd/styles/wide_large/public/images/2015/07/uncha.jpg?itok=UGtFJd3n'%>
+            <% _.each(messages, function(item) { %>  <!--messages es la coleccion... item es el valor de la matriz que esta siendo iterado-->
+            <% var noPicture = 'images/no_pic.jpg'%>
             <li class="list-group-item">
                 <div class="row">
                     <img class="picture" src="<%= item.picture !== ''? item.picture : noPicture  %>" />
@@ -17,6 +18,7 @@
                     <span class="col-md-9 col-lg-9 text"><%= item.message %></span>
                 </div>
             </li>
+            <hr>
             <%});%>
         </ul>
     </script>
@@ -28,13 +30,23 @@
         <div class="col-lg-12 col-md-12">
             <!-- search -->
             <div class="row">
-                //campo texto
+                <div class="col-lg-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control search" placeholder="Search...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default btnSearch" type="button" ><i class="fa fa-search"></i></button>
+                </span>
+                    </div><!-- /input-group -->
+                </div>
             </div>
+            <br>
+            <br>
 
             <!-- messages -->
             <div class="row" id="mydiv">
 
             </div>
+
         </div>
     </div>
 </div>
